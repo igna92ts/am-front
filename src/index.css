@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar-brand,
+.navbar-nav {
+    height: 100px;
+    padding: 20px 20px;
+}
+
+.navbar-static-top {
+  background-color: #174586;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 3px 2px 0px #406c93;
+    -moz-box-shadow: 0 3px 2px 0px #406c93;
+    box-shadow: 0 3px 2px 0px #406c93;
+    margin-bottom: 40px;
+    /* the rest of your styling */
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0px 3px rgba(0,0,0,0.10), 0 1px 3px rgba(0,0,0,0.10);
+}
+
+.card-hotel {
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+}
+
+.card-filter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hotel-container {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+}
+
+.filter-container {
+  margin-right: 20px;
+  width: 22vw;
+}
+
+.filter-section-title {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 12px 18px;
+}
+
+.filter-title {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 18px;
+  cursor: pointer;
+  color: #2187bb;
+}
+
+.filter-content {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+
+.filter-inner {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.name-filter {
+  justify-content: space-between;
+}
+
+.name-input {
+  width: 65%;
+}
+
+.filter-expanded {
+  max-height: 600px;
+  transition: max-height 0.5s ease-in;
+}
+
+.filter-icon {
+  height: 16px;
+}
+
+.dash-line{
+  border: 0 none;
+  border-left: 1px dashed #322f32;
+  background: none;
+  height:190px;
+}
+
+.hotel-img {
+  border: 8px solid white;
+  flex: 3.33;
+  background-size: 100% 100%;
+}
+
+.hotel-info {
+  flex: 4.16;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+}
+
+.hotel-info-member {
+  margin-bottom: 5px;
+}
+
+.hotel-link {
+  flex: 3;
+  border: 0 none;
+  border-left: 1px dashed #cfcfcf;
+  margin: 10px 0;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.hotel-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2187bb
+}
+
+.hotel-stars {
+  display: flex;
+  flex-direction: row;
+}
+
+.star {
+  font-size: 18px;
+  color: #FDBA12;
+  padding-right: 5px;
+}
+
+.hotel-amenities {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Lato', sans-serif;
+  color: #454848;
+}
+
+.amenity {
+  height: 25px;
+  padding-right: 10px;
+}
+
+.price {
+  line-height: 1.75rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e16800
+}
+
+.currency {
+  font-size: 25px;
+  line-height: 25px;
+  margin-right: 5px;
+}
+
+.amount {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.link-button {
+  background-color: #002a79;
+  color: #fff;
+  text-shadow: none;
+  box-shadow: 0 -2px 0 #001e57 inset;
+  padding: 10px 20%;
+  font-size: 22px;
+  border-radius: 5px;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.link-title {
+  font-size: 13px;
+}
+
+.link-member {
+  margin-bottom: 15px;
+}
+
+.name-filter-btn {
+  background-color: #002a79;
+  color: #fff;
+  text-shadow: none;
+  box-shadow: 0 -2px 0 #001e57 inset;
+  padding: 5px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  text-decoration: none !important;
+  cursor: pointer;
+  text-align: center;
+}
+
+.star-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .filter-container {
+    width:100%;
+  }
+
+  .card-filter {
+    margin-bottom: 0px; 
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel-container {
+    width: 95%;
+  }
+
+  .card-hotel {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-hotel > .hotel-img {
+    height: 250px;
+  }
+
+  .card-hotel > .hotel-link {
+    height: 200px;
+  }
+
+  .hotel-link {
+    border: 0 none;
+    border-top: 1px dashed #cfcfcf;
+    margin: 0 10px;
+  }
+
+  .link-button {
+    padding: 10px 35%;
+  }
+
+  .hotel-info {
+    height: auto;
+  }
+
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .filter-section-title, .filter-title {
+    text-align: center;
+  }
+
+  .star-filter {
+    text-align: initial;
+  }
+
+  .fix{
+    position:fixed;
+    top:0;
+    z-index: 1000;
+  }
+}
